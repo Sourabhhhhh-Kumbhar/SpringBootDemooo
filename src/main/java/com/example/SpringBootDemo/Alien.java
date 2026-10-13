@@ -3,6 +3,7 @@
 package com.example.SpringBootDemo;
 
 // Import the @Component annotation from Spring
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 // @Component tells Spring: "Create one object of this class when the app
@@ -17,7 +18,7 @@ public class Alien
 //    {
 //        System.out.println("Coding...");
 //    }
-
+    @Autowired
     Laptop laptop;
     public void code()
     {
