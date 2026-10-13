@@ -41,7 +41,10 @@ public class AlienDemo
     public static void main(String[] args)
     {
         ApplicationContext context = SpringApplication.run(SpringBootDemoApplication.class, args);
-        Laptop lap = context.getBean(Laptop.class);
-        lap.compile();
+
+//        Laptop lap = context.getBean(Laptop.class);
+//        lap.compile();    //These ARe useless when USing Autowiring
+        Alien obj = context.getBean(Alien.class);
+        obj.code();
     }
 }
