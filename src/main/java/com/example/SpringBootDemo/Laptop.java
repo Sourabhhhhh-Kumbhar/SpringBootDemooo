@@ -1,4 +1,12 @@
 package com.example.SpringBootDemo;
 
-public class Laptop {
+import org.springframework.stereotype.Component;
+
+@Component
+public class Laptop
+{
+    public void compile()
+    {
+        System.out.println("Compiling...");
+    }
 }
