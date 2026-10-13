@@ -11,10 +11,16 @@ import org.springframework.stereotype.Component;
 @Component
 public class Alien
 {
-    // A normal Java method. Spring doesn't treat it specially;
-    // it just runs when someone calls obj.code().
+//    // A normal Java method. Spring doesn't treat it specially;
+//    // it just runs when someone calls obj.code().
+//    public void code()
+//    {
+//        System.out.println("Coding...");
+//    }
+
+    Laptop laptop;
     public void code()
     {
-        System.out.println("Coding...");
+        laptop.compile();
     }
 }
